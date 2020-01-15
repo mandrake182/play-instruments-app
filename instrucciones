@@ -1,0 +1,1 @@
+situarse dentro del root del proyecto y correr el comando npm install para instalar todas las librerias y dependencias del proyecto, despues correr el comando npm start y con eso se inicializara el proyecto
