@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Instrumentos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-label>Toca un instrumento</ion-label>
+   <ion-grid>
+      <ion-row >
+          <ion-col size="6" *ngFor="let instrumento of instrumentos">
+              <ion-card (click)="playSound(instrumento.audio)">      
+                  <ion-img [src]="instrumento.imagen"></ion-img> 
+              </ion-card>
+          </ion-col>                    
+        </ion-row>
+   </ion-grid>    
+  </div>
+</ion-content>
